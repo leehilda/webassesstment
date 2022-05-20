@@ -178,19 +178,19 @@ h1,h2,h3,h4,h5{
 }
 
 .orientation img, .campus img, .lecture img{
-    width: 35%;
     margin: 16px;
+    width: 35%;
+    height: auto;
 }
 
-.campus, .orientation, .lecture {
+.campus {
     display: flex;
     align-items: center;
-    width: 65%;
     margin-right: 24px;
 }
 
 .lecture{
-    background-color: #e6e6e6;
+    background-color: lightgray;
 }
     
 .thesis {
@@ -199,6 +199,7 @@ h1,h2,h3,h4,h5{
 }
 .thesis-heading {
   text-align: center;
+  font-weight: bold;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -210,6 +211,10 @@ h1,h2,h3,h4,h5{
   width: 60%;
   padding: 0px 24px;
 }
+.video-content > video{
+    width: 100%;
+}
+
 .thesis-right {
   display: flex;
   flex-direction: column;
@@ -218,18 +223,20 @@ h1,h2,h3,h4,h5{
   width: 40%;
   padding-right: 20px;
 }
-.thesis-content {
+.thesisContent {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
 }
 .thesis-right img {
   display: flex;
   width: 35%;
-  padding: 16px 16px;
+  padding: 16px;
 }
 .thesis-text {
   width: 65%;
+  display: flex;
   padding-right: 24px;
 }
 .fisma {
@@ -336,6 +343,7 @@ h1,h2,h3,h4,h5{
 .thesis {
     width: 100%;
     padding-bottom: 32px;
+    
 }
 .thisisaheader h2 {
     text-align: center;
@@ -354,28 +362,22 @@ h1,h2,h3,h4,h5{
 .thesisRight {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
     width: 40%;
-    padding-right: 20px;
+    
 }
-.thesisContent {
+
+.thesisContent{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+    flex-direction: row;
 }
-.thesisRight img {
-    display: flex;
+
+.thesisContent img {
     width: 35%;
-    padding: 16px 16px;
+    padding: 10px;
 }
-.fismatext {
-    width: 65%;
-    padding-right: 24px;
-}
-.fisma {
-    background-color: #e6e6e6;
+
+.thesisContent h3{
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 720px) {
@@ -396,4 +398,9 @@ footer{
     border-top: 1px solid #e6e6e6;
     width: 100%;
     padding: 24px 16px;
+}
+.footer-links {
+    justify-content: flex-end;
+    padding: 20px;
+
 }
